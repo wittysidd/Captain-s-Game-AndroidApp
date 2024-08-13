@@ -180,7 +180,7 @@ fun captainGame(){
                 Button(onClick = {
                     direction.value = "EAST"
                     if (healthOfShip.value > 0) {
-                        if (Random.nextBoolean() == true) {        //50-50 randomizer
+                        if (Random.nextBoolean() == true) {        //50-50 random
                             treasuresFound.value += 1
                             Toast.makeText(context, "Treasure Found", Toast.LENGTH_SHORT).show()
                             stormEncountered.value = "No Damage"
